@@ -14,6 +14,14 @@ git diff 查看尚未暂存的文件更新了哪些部分
 git diff --staged/--cached 比对已暂存文件与最后一次提交的文件差异
 git commit -m "x" 提交更新
 git commit -a -m "x" 跳过暂存阶段提交更新
+git commit --amend 会将暂存区中的文件提交。 如果自上次提交以来你还未做任何修改，则只修改提交信息。
 git rm <filename> 移除文件，不再跟踪
 git rm --cached <filename> 移除仓库和暂存区文件，但保留本地
 git mv <filename> <newname> 重命名文件
+git log 查看提交历史
+git log -p/--patch -n 显示n条记录，显示每次提交所引入的差异
+git log --stat 显示每次提交的简略统计信息
+git log --pretty=oneline 将每个提交放在一行显示
+git log --pretty=format:"%h - %an, %ar : %s" 定制记录的显示格式
+git log --graph 展示分支、合并历史
+git log -S <function_name> 只会显示那些添加或删除了该字符串的提交
