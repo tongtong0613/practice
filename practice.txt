@@ -13,3 +13,7 @@ git add --all 跟踪所有文件
 git diff 查看尚未暂存的文件更新了哪些部分
 git diff --staged/--cached 比对已暂存文件与最后一次提交的文件差异
 git commit -m "x" 提交更新
+git commit -a -m "x" 跳过暂存阶段提交更新
+git rm <filename> 移除文件，不再跟踪
+git rm --cached <filename> 移除仓库和暂存区文件，但保留本地
+git mv <filename> <newname> 重命名文件
