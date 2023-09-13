@@ -49,3 +49,4 @@ git checkout -b <newbranchname> 创建新分支并切换到新分支
 git branch <branchname> 创建新分支
 git checkout <branchname> 切换到分支
 git log --oneline --decorate 查看各个分支当前所指的对象
+git branch -d <branchname> 删除分支
