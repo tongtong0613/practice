@@ -46,3 +46,6 @@ git push <remote> :refs/tags/<tagname> 删除仓库标签
 git push <remote> --delete <tagname> 删除仓库标签
 git config --global alias.last 'log -1 HEAD' 设置别名
 git checkout -b <newbranchname> 创建新分支并切换到新分支
+git branch <branchname> 创建新分支
+git checkout <branchname> 切换到分支
+git log --oneline --decorate 查看各个分支当前所指的对象
