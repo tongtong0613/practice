@@ -3,3 +3,7 @@
 2.git add --all
 3.git commit -m "xxx"
 4.git push --set-upstream origin master
+
+git status 查看哪些文件处于什么状态
+git add <filename> 跟踪一个文件
+git add --all 跟踪所有文件
