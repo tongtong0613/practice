@@ -5,5 +5,11 @@
 4.git push --set-upstream origin master
 
 git status 查看哪些文件处于什么状态
+git status -s/--short 以简洁方式输出
+	新添加的未跟踪文件前面有??标记，新添加到暂存区中的文件前面有A标记，修改过的文件前面有M标记。
+	输出中有两栏，左栏指明了暂存区的状态，右栏指明了工作区的状态。
 git add <filename> 跟踪一个文件
 git add --all 跟踪所有文件
+git diff 查看尚未暂存的文件更新了哪些部分
+git diff --staged/--cached 比对已暂存文件与最后一次提交的文件差异
+git commit -m "x" 提交更新
