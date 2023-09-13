@@ -1,0 +1,5 @@
+1.git init
+	创建一个名为.git的子目录，这个子目录含有初始化的 Git 仓库中所有的必须文件。
+2.git add --all
+3.git commit -m "xxx"
+4.git push --set-upstream origin master
