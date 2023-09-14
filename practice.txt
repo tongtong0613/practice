@@ -49,4 +49,10 @@ git checkout -b <newbranchname> 创建新分支并切换到新分支
 git branch <branchname> 创建新分支
 git checkout <branchname> 切换到分支
 git log --oneline --decorate 查看各个分支当前所指的对象
-git branch -d <branchname> 删除分支
+git branch --no-merged 查看所有包含未合并工作的分支
+git checkout -b <branch> <remote>/<branch> 创建分支并跟踪远程分支
+git branch -u <remote>/<branch> <branch> 本地分支跟踪远程分支
+git push <remote> --delete <branch> 删除远程分支
+git rebase --onto master server client 取出client分支，找出它从server分支分歧之后的补丁， 然后把这些补丁在master分支上重放一遍，让client看起来像直接基于master修改一样
+git rebase <basebranch> <topicbranch> 将topicbranch合并到basebranch
+git diff --check 找到可能的空白错误并将它们为你列出来
