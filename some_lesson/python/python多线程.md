@@ -505,6 +505,15 @@ with ThreadPoolExecutor(max_workers=4) as executor:
 7
 ```
 
+**submit与map的区别**
+- submit返回的是一个futures的对象，使用.result()才能获取他的运行结果
+- submit接受的对象是函数加一个固定的参数
+- map返回的是所有线程执行完毕后返回的结果
+- map接受的对象是函数加一个传入函数的集合列表
+- 他们都能提前获取先执行完的结果
+- map比submit简单好用
+- map返回的结果是按照列表传入参数的顺序返回结果，submit返回结果是哪个线程先执行完就返回哪个线程的结果
+
 ### 生产者和消费者模式
 
 **案例一**
