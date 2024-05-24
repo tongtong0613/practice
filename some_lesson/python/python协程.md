@@ -647,7 +647,7 @@ if __name__ == "__main__":
 ```
 
 **call_at**
-call_at类似与call_later，但是他指定的时间不再是传统意义上的时间，而是loop的内部时钟时间，效果和call_later一样， call_later内部其实调用了call_later
+call_at类似与call_later，但是他指定的时间不再是传统意义上的时间，而是loop的内部时钟时间，效果和call_later一样， call_at内部其实调用了call_later
 
 ```python
 import time

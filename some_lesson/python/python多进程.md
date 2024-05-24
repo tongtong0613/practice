@@ -54,7 +54,7 @@ win32
 
 ### 数据通信
 
-ipc：就是进程间的通信模式，常用的一半是socke，rpc，pipe和消息队列等。
+ipc：就是进程间的通信模式，常用的一般是socket，rpc，pipe和消息队列等。
 
 multiprocessing提供了threading包中没有的IPC(比如Pipe和Queue)，效率上更高。应优先考虑Pipe和Queue，避免使用Lock/Event/Semaphore/Condition等同步方式 (因为它们占据的不是用户进程的资源)。
 
@@ -299,7 +299,7 @@ if __name__ == '__main__':
 ```python
 from multiprocessing import Pool
 def test(i):
-    prin(i)
+    print(i)
 if __name__=="__main__":
     lists=[1,2,3]
     pool=Pool(processes=2) #定义最大的进程数
